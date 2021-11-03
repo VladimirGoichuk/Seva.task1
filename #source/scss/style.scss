@@ -1,0 +1,630 @@
+@import "nullStyle.scss";
+@import "variables.scss";
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.header {
+    width: 100%;
+    height: 73px;
+    background-color: $headerBackgroundColor;
+    padding: 17px 85px 0 85px;
+    &_row {
+        position: relative;
+        display:flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1105px;
+    }
+    &_logo {
+        max-width: 167px;
+    }
+    &_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 0 1 auto;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        width:100%;
+        max-width: 355px;
+    }
+    &_but {
+        margin: auto 10px;
+    }
+    &_user {
+        position: relative;
+        display:flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+
+        &-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            overflow: hidden;
+            margin-right: 9px;
+            flex: 0 0 40px;
+        }
+        &-name {
+            color: white;
+            font-size: 14px; 
+            font-weight: 400;
+        }
+    }
+}
+.main {
+    width: 100%;
+    position:relative;
+    padding: 0 75px 28px 85px;
+    background-color: $backgroundColor;
+    &_row {
+        display: flex;
+        flex-direction: row;
+        position:relative;
+    }
+
+}
+.main_left-menu {   
+    position: relative;
+    flex: 0 1 350px;
+    min-width: 231px;
+    width: 33%;
+    flex-shrink: 2;
+    &_block{
+        background-color:$blockBackgroundColor;
+        position: relative;
+        padding: 17px 15px 23px 16px;
+        margin-top: 28px;
+        position: relative;
+        min-width:250px;
+        flex: 0 1 320px;
+        
+    }
+    &_content {
+        max-width: 318px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        flex: 0 1 350px;
+        min-width: 200px;
+            
+    }
+
+    .left-menu_content {
+        padding-top: 20px;
+        width:100%;
+    } 
+    .left-menu_title {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin-bottom: 22px;
+        &_text {
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;    
+            justify-content: space-around;
+            align-items: flex-start;
+            position: relative;
+            padding-left: 7%;
+        }
+        &_name-position {
+            .name {
+                font-family: Segoe UI; 
+                font-size: 24px; 
+                font-weight: 400; 
+                color: $headerBackgroundColor;    
+            }
+            .position {
+                font-family: Segoe UI; 
+                font-size: 14px; 
+                font-weight: 500; 
+                color: #7e7ab6;    
+            }
+            span{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                margin-bottom: 0px;
+            }
+        }
+        
+    }
+}
+.left-menu_title_but {
+    font-family: Segoe UI; 
+    font-size: 14px; 
+    font-weight: 400; 
+    color: $headerBackgroundColor; 
+    opacity: 0.32;
+    .icon {
+        max-width: 17px;
+        max-height: 13px;
+        display: inline;
+        margin-top:4px;
+    }
+}
+.line {
+    width:100%;
+    height: 1px;
+    background-color: #d2d2e4;
+}
+.side-bar_logo {
+    width: 92px;
+    height: 92px;   
+    background-color: $backgroundColor;
+    border: 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 92px;
+}
+.left-menu_content_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    .left-menu_content_but {
+        padding: 10px 16px 11px 15px;
+        border-radius: 20px;
+        width: auto;
+        overflow: hidden;
+        position: relative;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        span{
+            font-family: Segoe UI; 
+            font-size: 14px;
+            font-weight: 500; 
+            color: $blockBackgroundColor;
+            padding-left:27px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        .icon_but{
+            margin-right: 5px;
+        }
+    }
+    .go_to_but {
+        background-color: $goodResultColor;
+        & span::before{
+            content:'';
+            background-image:url(../images/icon2.png);
+            width:18px;
+            height:18px;
+            position: absolute;
+            top:10px;
+            left:15px;
+        }
+    }
+    .edit_change{
+        display: flex;
+        margin-top: 8.35%;
+        width: 100%;
+        justify-content: space-between;
+        .edit_info_but {
+            background-color: #7e7ab6;
+            margin-top: 0;
+            flex-shrink: 1;
+            & span::before{
+                content:'';
+                background-image:url(../images/icon3.png);
+                width:17px;
+                height:17px;
+                position: absolute;
+                top:10px;
+                left:15px;
+            }
+        }
+        .change_pass_but {
+            background-color: #7e7ab6;
+            margin-top: 0; 
+            flex-shrink: 10;
+            & span::before{
+                content:'';
+                background-image:url(../images/icon6.png);
+                width:17px;
+                height:17px;
+                position: absolute;
+                top:10px;
+                left:15px;
+            }
+        }
+    }
+    .manage_membership_but {
+        background-color: #7e7ab6;
+        margin-top: 4%; 
+        & span::before{
+            content:'';
+            background-image:url(../images/icon4.png);
+            width:17px;
+            height:17px;
+            position: absolute;
+            top:10px;
+            left:15px;
+        }
+    }
+    .support_but {
+        background-color:$headerBackgroundColor;
+        margin-top: 8.35%;
+        & span::before{
+            content:'';
+            background-image:url(../images/icon5.png);
+            width:17px;
+            height:18px;
+            position: absolute;
+            top:10px;
+            left:15px;
+        }    
+    }
+}
+
+
+
+.main_left-menu h2{
+    font-family: Segoe UI; 
+    font-size: 24px; 
+    font-weight: 500; 
+    color: $headerBackgroundColor;    
+}
+.left-menu2_title_text {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 5%;  
+}
+.left-menu_person {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    width:100%;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.side-bar2_logo {
+    width: 55px;
+    height: 55px;   
+    background-color:$backgroundColor;
+    border: 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 55px;
+}
+.name {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Segoe UI;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.education {
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Segoe UI;
+    display: inline-block;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.footer {
+    background-color: $footerBackgroundColor;
+    height: 70px;
+    width:100%;
+    position: relative;
+    padding: 27px 65px 17px 104px;
+    &_rov {
+        position: relative;
+        display:flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1105px;
+        margin: auto;
+    }
+    &_text {
+        font-family: SegoeUI;
+        font-weight: 400;
+        font-size:  14px;
+        color: white;
+    }    
+}
+
+.main_right {    
+    width:70%;
+    min-width: 350px;
+    flex-shrink: 1;
+    padding-left: 10px;
+    &_block{
+        margin: 29px 0px 28px 4%;
+        background-color:$blockBackgroundColor;
+        flex: 0 1 760px;
+    }
+}
+
+
+.right{
+    &_content{
+        padding: 15px 14px 13px 16px;
+    }
+    &_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding-right: 1%;
+        &_logo {
+            width: 55px;
+            height: 55px;
+            border-radius:50%;    
+            -webkit-border-radius:50%    ;
+            -moz-border-radius:50%    ;
+            -ms-border-radius:50%    ;
+            -o-border-radius:50%    ;
+            overflow: hidden;
+            flex: 0 0 55px;
+        }
+        &_text{
+            font-size: 24px;
+            font-weight: 500;
+            font-family: Segoe UI;
+            padding-left: 18px;
+            position:relative;
+            width:100%;
+            span{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                width: 100%;
+            }
+            
+        }
+        .spoiler{
+            margin-top: 10px;
+            background-image: url(../images/arrow_down.png);
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 8px;
+        }
+    }
+    &_statistic {    
+        display:none;
+    }
+    &_education-type {
+        position:relative;
+    }
+    &_type-name {
+        padding-left: 10px;
+        padding-top:20px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Segoe UI;
+        &::after{
+            content:'';
+            background-image: url(../images/arrow_down.png);
+            width:11px;
+            height: 8px;
+            position: absolute;
+            right: 20px;
+            left:auto;
+            top: 30px;
+        }
+    }
+    &_type-lessons {
+        margin-bottom: 20px;
+        margin-left: 7%;
+    }
+    &_lesson {
+        margin-top: 22px;
+        position:relative;
+        &-name {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Segoe UI;
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            &::after{
+                content:'';
+                background-image: url(../images/arrow_down.png);
+                width:11px;
+                height: 8px;
+                position: absolute;
+                right: 20px;
+                left:auto;
+                top: 15px;
+            }
+            
+        }
+    }
+}
+
+.right_title.active .spoiler{
+    margin-top: 10px;
+    background-image: url(../images/arrow_up.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 8px;
+}
+.college_tutoring{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    &::before{
+        content:' ';
+        background-image: url(../images/graduation.png);
+        width:19px;
+        height: 24px;
+        margin-right: 19px;
+        display: inline-block;
+        align-items: center;
+    }
+}
+
+.pre-algebra::before{
+    content:'24';
+    width: 35px;
+    height: 35px;
+    border:2px solid $badResultColor;
+    color: $badResultColor;
+    display:inline-block;
+    border-radius:50%;
+    margin-right: 14px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-weight: 500;
+}
+.invisible{
+    display: none;
+}
+.right_lesson-statistic {
+    padding:15px 0 0 0;    
+    position:relative;
+    display: flex;
+}
+.first_column {
+    width: 50%;
+}
+.unit {
+    line-height: 40px;
+    margin-right: 18px;
+    padding-left: 9%;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Segoe UI;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    &::before{
+        content:'';
+        background-image: url(../images/arrow_down.png);
+        width:11px;
+        height: 8px;
+        position: absolute;
+        left:1px;
+        top:17px;
+    }    
+}
+.green {
+    color:$goodResultColor;
+    display: inline;
+}
+.red{
+    color: $badResultColor;
+    display: inline;
+}
+.second_column {
+    width: 50%;
+}
+.intruductory-algebra::before{
+    content:'42';
+    width: 35px;
+    height: 35px;
+    border:2px solid $badResultColor;
+    color: $badResultColor;
+    display:inline-block;
+    border-radius:50%;
+    margin-right: 14px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-weight: 500;
+}
+.intermediate-algebra::before{
+    content:'68';
+    width: 35px;
+    height: 35px;
+    border:2px solid $goodResultColor;
+    color: $goodResultColor;
+    display:inline-block;
+    border-radius:50%;
+    margin-right: 14px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-weight: 500;
+}
+.college-algebra:before{
+    content:'80';
+    width: 35px;
+    height: 35px;
+    border:2px solid $goodResultColor;
+    color: $goodResultColor;
+    display:inline-block;
+    border-radius:50%;
+    margin-right: 14px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-weight: 500;
+}
+.homeschooling::before{
+    content: '';
+    background-image: url(../images/icon_house.png);
+    width: 23px;
+    height: 20px;
+    margin-right: 19px;
+    display: inline-block;
+    align-items: center;
+}
